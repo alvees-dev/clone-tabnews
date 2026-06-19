@@ -6,9 +6,8 @@ async function query(queryObject) {
     port: process.env.POSTGRES_PORT,
     user: process.env.POSTGRES_USER,
     database: process.env.POSTGRES_DB,
-    password: process.env.POSTGRES_PASSWAORD,
+    password: process.env.POSTGRES_PASSWORD,
   });
-  console.log(client);
   await client.connect();
   const result = await client.query(queryObject);
   await client.end();
