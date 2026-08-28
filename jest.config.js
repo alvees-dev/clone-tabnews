@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 dotenv = require("dotenv");
 
 const nextJest = require("next/jest");
